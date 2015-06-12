@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>JavaScript扫雷游戏</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="hananTOP">
+    <h3>JS版扫雷游戏</h3>
+  </div>
+  <div class="main solid-border-up" id="oMain" style="width: 213px; display:none">
+    <div class="solid-border-down top">
+      <table>
+        <tr>
+          <td style="width: 42px;">
+            <div class="solid-border-down count" id="oCount">10</div>
+          </td>
+          <td>
+            <input id="start" type="image" src="img/happy.gif" title="点击开始游戏">
+          </td>
+          <td style="text-align: right;">
+            <label>
+              <input type="radio" name="radio" checked="checked" value="10"> 初级
+            </label>
+            <label>
+              <input type="radio" name="radio" value="40"> 中级
+            </label>
+            <label>
+              <input type="radio" name="radio" value="99"> 高级
+            </label>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="mine-field solid-border-down" id="mineField"></div>
+  </div>
+  <img id="loading" src="img/loading.gif" alt="">
+  <script>var resource_path = '/';</script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
